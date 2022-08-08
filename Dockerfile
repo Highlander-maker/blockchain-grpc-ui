@@ -18,6 +18,7 @@ RUN go build -o /grpcui \
     -ldflags "-w -extldflags \"-static\" -X \"main.version=$(cat VERSION)\"" \
     ./cmd/grpcui
 
+
 # New FROM so we have a nice'n'tiny image
 FROM scratch
 WORKDIR /

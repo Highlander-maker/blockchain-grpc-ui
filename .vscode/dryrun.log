@@ -1,0 +1,17 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Volumes/External/chaintools/blockchain-grpc-ui'
+go get -d -v -t ./...
+gofmt -s -l .
+if [ -n "$(gofmt -s -l .)" ]; then \
+		exit 1; \
+	fi
+go vet ./...
+go install honnef.co/go/tools/cmd/staticcheck@v0.0.1-2020.1.4
+staticcheck ./...
+go install github.com/gordonklaus/ineffassign@7953dde2c7bf
+ineffassign .
+go install github.com/nishanths/predeclared@86fad755b4d3
+predeclared .
+go test -race ./...
+make: Leaving directory `/Volumes/External/chaintools/blockchain-grpc-ui'
+ 

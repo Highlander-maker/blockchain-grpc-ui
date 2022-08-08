@@ -1,0 +1,1 @@
+{"buildTargets":["checkgofmt","ci","deps","docker","errcheck","generate","golint","ineffassign","install","make","predeclared","release","staticcheck","test","updatedeps","vet"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
