@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Mon Aug  8 15:51:08 2022
+# Make data base, printed on Mon Aug  8 22:23:33 2022
 
 # Variables
 
@@ -50,11 +50,13 @@ GOPATH = /Users/highlander/go
 # environment
 NVM_BIN = /Users/highlander/.nvm/versions/node/v16.13.0/bin
 # environment
+LaunchInstanceID = 1649D2AE-8F06-4CA1-8507-2DEAB30B4305
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.3nGyUi0t7y/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.EeQlg88S6H/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -139,6 +141,8 @@ MAKEFILES :=
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 18707
 # automatic
 ^F = $(notdir $^)
 # default
@@ -150,9 +154,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 17618
+VSCODE_PID = 4271
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=2/94=2%
+# Load=72/1024=7%, Rehash=0, Collisions=2/96=2%
 
 # Pattern-specific Variable Values
 
@@ -298,14 +302,14 @@ ineffassign:
 #  File does not exist.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 60):
+ 
+make: *** No rule to make target `all'.  Stop.
+
 	@go install github.com/gordonklaus/ineffassign@7953dde2c7bf
 	ineffassign .
 	
 
 docker:
- 
-make: *** No rule to make target `all'.  Stop.
-
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -370,6 +374,6 @@ updatedeps:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Aug  8 15:51:09 2022
+# Finished Make data base on Mon Aug  8 22:23:33 2022
 
  
